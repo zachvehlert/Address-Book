@@ -13,7 +13,9 @@
     </thead>
     <tbody>
       <% @friends.each do |friend| %>
-        <%= render friend %>
+        <% if friend.user_id == current_user.id %>
+          <%= render friend %>
+        <% end %>
     </tbody>
     <% end %>
   </table>
