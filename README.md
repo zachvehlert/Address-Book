@@ -1,24 +1,30 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Ruby Version:
 
-Things you may want to cover:
+-  **Ruby**: 3.2.3
+### System Dependencies:
 
-* Ruby version
+- **Ruby**: Make sure Ruby is installed on your system.
+- **Rails**: Rails 7.1.3.2
+### Database Creation:
 
-* System dependencies
+1. Create the database:
 
-* Configuration
+```
+rails db:create
+```
 
-* Database creation
+2. Migrate the database:
 
-* Database initialization
+```
+rails db:migrate
+```
 
-* How to run the test suite
+### Run the app:
 
-* Services (job queues, cache servers, search engines, etc.)
+```
+rails s
+```
 
-* Deployment instructions
-
-* ...
+The app will be running on your localhost.
